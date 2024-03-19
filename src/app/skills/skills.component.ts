@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrl: './skills.component.scss'
 })
 export class SkillsComponent implements OnInit {
-  @Input() skills:any;
+  @Input() skills:any=null;
 
   ngOnInit():void{
 

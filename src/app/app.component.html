@@ -107,11 +107,15 @@
       class="shape-fill"></path>
   </svg>
 </div>
-<section class="aboutme">
-  <div class="container">
-      <app-skills [skills]="info.skills"></app-skills>
-  </div>
-</section>
+
+
+  @if(info && info.skills){
+  <section class="aboutme">
+    <div class="container">
+        <app-skills [skills]="info.skills"></app-skills>
+    </div>
+  </section>
+  }
 }@placeholder{
   <span>.</span>
 }

@@ -1,0 +1,106 @@
+{
+    "menu": {
+        "links": {
+            "link_1": "Startseite",
+            "link_2": "Fähigkeiten",
+            "link_3": "Erfahrungen",
+            "link_4": "Hobbys",
+            "link_5": "MIT"
+        },
+        "language": {
+            "label": "Sprache",
+            "es": "Spanisch",
+            "en": "Englisch",
+            "de": "Deutsch",
+            "it": "Italienisch"
+        }
+    },
+    "front": {
+        "greeting": "Hallo, ich bin",
+        "name": "Emanuel Leiva N.",
+        "slogan": [
+            "Denken und verarbeiten vor dem Kodieren und Kompilieren.",
+            "Wir können einem Computer beibringen, wie man rechnet.",
+            "Refactoring ist die Kunst, das bereits Funktionierende zu verbessern.",
+            "Wissen zu teilen bereichert die Teamarbeit.",
+            "Ich mag es, Gedanken in Codezeilen umzuwandeln."
+        ],
+        "career": {
+            "line_1": "Apprecio.com CTO, Mitbegründer | IT-Ingenieur |",
+            "line_2": "Senior Entwickler (19+ Jahre)",
+            "line_3": "MIT Professional Certificate: Chief Technology Officer"
+        }
+    },
+    "skills": {
+        "titles": {
+            "title_1": "Programmiersprachen",
+            "title_2": "Frameworks",
+            "title_3": "Webentwicklung",
+            "title_4": "Datenbank",
+            "title_5": "Cloud",
+            "title_6": "Andere Werkzeuge"
+        },
+        "timeline": {
+            "year_1": {
+                "year": "2005",
+                "title": "Erste Schritte",
+                "text": "In diesem Jahr begann ich meine Reise in der Softwareentwicklung mit Visual Basic 6, konzentrierte mich auf die Erstellung kleiner Desktop-Anwendungen und entwickelte verschiedene praktische Beispiele, um mein Lernen zu vertiefen."
+            },
+            "year_2": {
+                "year": "2006",
+                "title": "Neue Sprachen",
+                "text": "Mein Interesse an der Webentwicklung begann, als ich einen Freund beim Programmieren sah, was mich dazu brachte, PHP und ActionScript mit Flex und Adobe Flash zu lernen."
+            },
+            "year_3": {
+                "year": "2007",
+                "title": "Zurück zu den Wurzeln",
+                "text": "Obwohl ich in der grafischen Programmierung begonnen hatte, zog mich die Entwicklung auf mittlerer Ebene mit C/C++ in einer Linux-Umgebung an, wobei ich in die grundlegenden Prinzipien und Grundlagen der Programmierung eintauchte und so mein technisches Wissen erweiterte."
+            },
+            "year_4": {
+                "year": "2008",
+                "title": "Universitätsstudien",
+                "text": "An der Universität lernte ich aufgrund von akademischen Anforderungen, in Java zu entwickeln, was mich später dazu brachte, Programmierkurse in dieser Sprache zu unterrichten, zusammen mit Oracle- und Mysql-Datenbanken."
+            },
+            "year_5": {
+                "year": "2010",
+                "title": "Web 3.0",
+                "text": "Mit der Konsolidierung des Web 3.0 begann ich, CSS zu studieren und serverseitige Aufrufe mit AJAX, jQuery, AngularJS und PHP zu verwenden, zusätzlich zu meinem Eintauchen in die Backend-Entwicklung mit Ruby und Python."
+            },
+            "year_6": {
+                "year": "2014",
+                "title": "Neue Frameworks",
+                "text": "Obwohl ich bereits Erfahrung mit verschiedenen PHP-Frameworks wie Cake, Yii und CodeIgniter hatte, entschied ich mich, mein Wissen zu modernisieren und zu erweitern, indem ich das Laravel-Framework in mein Repertoire integrierte."
+            },
+            "year_7": {
+                "year": "2016",
+                "title": "Migration in die Cloud",
+                "text": "In diesem Jahr stand ich vor bedeutenden Entscheidungen und entschied mich für die Migration und Adoption neuer Technologien. Ich beschloss, PHP nicht mehr zu verwenden und die Systeme, die ich entwickelte, in eine native Cloud-Architektur zu überführen, indem ich die Google Cloud Platform (GCP) lernte und einsetzte."
+            },
+            "year_8": {
+                "year": "2018",
+                "title": "Expansion",
+                "text": "Im Jahr 2018, bei meiner ersten Erfahrung in der Geschäftserweiterung, erkannte ich, dass Technologie ein grundlegender Pfeiler dieses Wachstums sein würde. Deshalb entschied ich mich, eine DevOps-Kultur zu implementieren, um die Effizienz und Zusammenarbeit in technischen Prozessen zu verbessern."
+            },
+            "year_9": {
+                "year": "2019",
+                "title": "Neue Zeiten, neue Modelle",
+                "text": "Angesichts neuer Herausforderungen in Bezug auf Skalierbarkeit und Geschwindigkeit konzentrierte ich mich darauf, nicht-relationale Datenbanken wie MongoDB, Redis und Firebase zu studieren und zu implementieren, um so die hohen Verbrauchsanforderungen bei reduzierten Kosten zu bewältigen."
+            },
+            "year_10": {
+                "year": "2020",
+                "title": "Neue Frontend-Layouts",
+                "text": "Obwohl ich bereits zuvor Angular und NodeJS studiert hatte, verwendete ich sie in diesem Jahr, um bedeutende Änderungen und Verbesserungen in den mit diesen Frameworks und der Laufzeitumgebung entwickelten Anwendungen zu implementieren."
+            },
+            "year_11": {
+                "year": "2022",
+                "title": "MIT",
+                "text": "In diesem Jahr entschied ich mich, ein Zertifikat für Hochtechnologiemanagement am MIT zu verfolgen, und erwarb Schlüsselfähigkeiten wie Innovationsführung, Technologieentwicklungsmanagement, Strategien und Portfolioanalyse, kontinuierliche Transformation und anderes."
+            },
+            "year_12": {
+                "year": "2024",
+                "title": "Ich lerne immer noch",
+                "text": "Trotz mehr als 19 Jahren in der Programmierung bleibt meine Leidenschaft für das kontinuierliche Lernen intakt, und jeden Tag bin ich erstaunt über die Neuerungen in diesem schönen Beruf. Ich hoffe, weiter zu wachsen und mit meinem Wissen beizutragen."
+            }
+        }
+    }
+}

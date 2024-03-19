@@ -1,0 +1,108 @@
+{
+    "menu": {
+        "links":{
+            "link_1":"Inicio",
+            "link_2":"Habilidades",
+            "link_3":"Experiencias",
+            "link_4":"Pasatiempos",
+            "link_5":"MIT"
+        },
+        "language":{
+            "label": "Lenguaje",
+            "es": "Español",
+            "en": "Ingles",
+            "de": "Alemán",
+            "it": "Italiano"
+        }
+    },
+    "front":{
+        "greeting":"Hola, soy",
+        "name": "Emanuel Leiva N.",
+        "slogan":[
+            "Pensar y procesar vienen antes de codificar y compilar.",
+            "Podemos enseñar a una computadora a cómo calcular.",
+            "Refactorizar es el arte de mejorar lo que ya está funcionando.",
+            "Compartir el conocimiento enriquece el trabajo en equipo.",
+            "Me gusta transformar pensamientos en líneas de código."
+        ],
+        "career":{
+            "line_1": "Apprecio.com CTO, Co-Fundador | Ingeniero TI |",
+            "line_2": "Desarrollador Senior (19+ años)",
+            "line_3": "MIT Professional Certificate: Chief Technology Officer"
+        }
+    },
+    "skills":{
+        "titles":{
+            "title_1": "Lenguajes de programación",
+            "title_2": "Frameworks",
+            "title_3": "Desarrollo web",
+            "title_4": "Base de Datos",
+            "title_5": "Cloud",
+            "title_6": "Otras Herramientas"
+        },
+        "timeline":{
+            "year_1":{
+                "year":"2005",
+                "title": "Primeros Pasos",
+                "text":"Este año inicié mi travesía en el desarrollo de software con Visual Basic 6, enfocándome en la creación de pequeñas aplicaciones de escritorio y en el desarrollo de diversos ejemplos prácticos para profundizar mi aprendizaje."
+            },
+            "year_2":{
+                "year":"2006",
+                "title": "Nuevos Lenguajes",
+                "text":"Mi interés por el desarrollo web comenzó al ver a un amigo programar, lo que me llevó a aprender PHP y ActionScript con Flex y Adobe Flash."
+            },
+            "year_3":{
+                "year":"2007",
+                "title": "Volviendo a los origenes",
+                "text":"Aunque comencé en programación gráfica, me atrajo el desarrollo a medio nivel con C/C++ en entorno Linux, profundizando en las bases y principios esenciales de la programación, ampliando así mi conocimiento técnico."
+            },
+            "year_4":{
+                "year":"2008",
+                "title": "Estudios Universitarios",
+                "text":"En la universidad, debido a requerimientos académicos, aprendí a desarrollar en Java, lo que me llevó a enseñar posteriormente clases de programación en este lenguaje, sumado a bases de datos de Oracle y Mysql."
+            },
+            "year_5":{
+                "year":"2010",
+                "title": "Web 3.0",
+                "text":"Con la consolidación de la Web 3.0, empecé a estudiar CSS y a utilizar llamadas del lado del servidor con AJAX, jQuery, AngularJS y PHP, además de incursionar en el desarrollo de back-end con Ruby y Phyton."
+            },
+            "year_6":{
+                "year":"2014",
+                "title": "Nuevos Frameworks",
+                "text":"Aunque ya contaba con experiencia en distintos frameworks de PHP como Cake, Yii y CodeIgniter, decidí modernizar y ampliar mis conocimientos integrando el framework de Laravel a mi repertorio."
+            },
+            "year_7":{
+                "year":"2016",
+                "title": "Migración a la nube",
+                "text":"Este año, enfrenté decisiones significativas y opté por la migración y adopción de nuevas tecnologías. Decidí dejar de usar PHP y transformar los sistemas que desarrollaba hacia una arquitectura nativa de la nube, aprendiendo y empleando Google Cloud Platform (GCP)."
+            },
+            "year_8":{
+                "year":"2018",
+                "title": "Expansión",
+                "text":"En 2018, durante mi primera experiencia en la expansión de un negocio, comprendí que la tecnología sería un pilar fundamental en este crecimiento. Por ello, decidí implementar una cultura de DevOps para mejorar la eficiencia y la colaboración en los procesos técnicos."
+            },
+            "year_9":{
+                "year":"2019",
+                "title": "Nuevos tiempos, Nuevos Modelos",
+                "text":"Ante nuevos desafíos de escalabilidad y velocidad, me enfoqué en estudiar e implementar bases de datos no relacionales como MongoDB, Redis y Firebase, abordando así las altas demandas de consumo con costos reducidos."
+            },
+            "year_10":{
+                "year":"2020",
+                "title": "Nuevos Layouts Frontend",
+                "text":"Aunque ya había estudiado Angular y NodeJS anteriormente, este año los utilicé para implementar cambios y mejoras significativas en las aplicaciones desarrolladas con estos frameworks y entorno de ejecución."
+            },
+            "year_11":{
+                "year":"2022",
+                "title": "MIT",
+                "text":"Este año opté por cursar una certificación de alta dirección tecnológica en el MIT, adquiriendo habilidades clave como liderazgo en la innovación, gestión del desarrollo tecnológico, estrategias y análisis de portafolio,transformación continua, entre otros."
+            },
+            "year_12":{
+                "year":"2024",
+                "title": "Sigo aprendiendo",
+                "text":"A pesar de contar con más de 19 años en programación, mi pasión por seguir aprendiendo permanece intacta, y cada día me sorprendo con las novedades en esta hermosa profesión. Espero continuar creciendo y contribuyendo con mis conocimientos."
+            }
+
+        }
+    }
+
+}

@@ -93,8 +93,6 @@ export class AppComponent implements OnInit {
     }
   }
 
-
-
   changeColor(): void{
 
     if(this.isLightTheme){

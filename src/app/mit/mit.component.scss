@@ -1,0 +1,78 @@
+.mit{
+    min-height: 30em;
+    background-image: var(--mit-bg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+    
+    .bg-content{
+        min-height: 55em;
+    }
+
+    .mit-shape{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 60px;
+        }
+    
+        .shape-fill {
+            fill: var(--header-color);
+        }
+    }
+
+    
+
+
+}
+
+.mit-shape-bottom{
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    margin-top: -75px;
+    svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 79px;
+    }
+    .shape-fill {
+        fill: var(--primary-color);
+    }
+
+}
+
+
+.bg-content{
+    .texto {
+        color: white;
+        font-size: 40px;
+        text-align: center;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+}
+
+@media (max-width: 991.98px) {
+    .mit-shape-bottom{
+        margin-top: -30px !important;
+        svg {
+            height: 30px !important;
+        }
+    }
+    .mit-shape{
+        svg{
+            height: 30px !important;
+        }
+    }
+}
+

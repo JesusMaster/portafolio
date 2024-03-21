@@ -2,15 +2,18 @@ import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { Observable, delay, timer} from 'rxjs'
+import {timer} from 'rxjs'
 import { HttpClient } from '@angular/common/http';
 import { SkillsComponent } from './skills/skills.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { MitComponent } from './mit/mit.component';
+import { HobbieComponent } from './hobbie/hobbie.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,FormsModule,CommonModule,SkillsComponent],
+  imports: [RouterOutlet,FormsModule,CommonModule,SkillsComponent,ExperienceComponent,MitComponent,HobbieComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

@@ -110,12 +110,47 @@
 
 
   @if(info && info.skills){
-  <section class="aboutme">
-    <div class="container">
-        <app-skills [skills]="info.skills"></app-skills>
-    </div>
-  </section>
+    <section class="about_me">
+      <div class="container">
+          <app-skills [skills]="info.skills"></app-skills>
+      </div>
+    </section>
+    }
+  }@placeholder{
+    <span>.</span>
   }
+
+@defer (on viewport; prefetch on idle) {
+<div class="divider-habilidades">
+  <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+  </svg>
+</div>
+
+<section class="my_experience">
+  <div class="container">
+    <app-experience></app-experience>
+  </div>
+</section>
+
+}@placeholder{
+  <span>.</span>
+}
+@defer (on viewport; prefetch on idle) {
+<section class="mit_experience">
+  <div class="row-fluid">
+    <app-mit></app-mit>
+  </div>
+</section>
+}@placeholder{
+  <span>.</span>
+}
+@defer (on viewport; prefetch on idle) {
+<section class="my_hobbie">
+  <div class="row-fluid">
+    <app-hobbie></app-hobbie>
+  </div>
+</section>
 }@placeholder{
   <span>.</span>
 }

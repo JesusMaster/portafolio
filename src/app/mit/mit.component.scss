@@ -1,57 +1,105 @@
-.mit{
+.mit {
     min-height: 30em;
     background-image: var(--mit-bg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.6;
-    
-    .bg-content{
+    overflow: auto;
+
+
+    .certified {
+        font-family: "Lato", sans-serif;
+        color: var(--text-selector);
+
+        .first {
+            font-size: 1.1em !important;
+            padding: 5px 0px !important;
+            margin: 0px 0px !important;
+            min-height: 0px !important;
+        }
+
+        .cert {
+            padding: 1em;
+            border-radius: 0.5em;
+            background-color: #fff;
+            min-height: 26em;
+
+
+
+            .cert_img {
+                background-color: #e1e1e1;
+                border-radius: 0.5em;
+                img {
+                    background-color: #fff;
+                }
+            }
+
+            .cert_title {
+                font-size: 16px;
+                font-weight: 600;
+                padding: 0.7em 0em;
+                max-height: 80px;
+                min-height: 71px;
+            }
+
+            .cert_date {
+                font-size: 14px;
+                font-weight: 400;
+                padding: 0em;
+            }
+
+        }
+
+    }
+
+    .bg-content {
         min-height: 55em;
     }
 
-    .mit-shape{
+    .mit-shape {
         position: absolute;
         left: 0;
         width: 100%;
         overflow: hidden;
+
         svg {
             position: relative;
             display: block;
             width: calc(100% + 1.3px);
             height: 60px;
         }
-    
+
         .shape-fill {
             fill: var(--header-color);
         }
     }
 
-    
+    .mit-shape-bottom {
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+
+        svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 79px;
+        }
+
+        .shape-fill {
+            fill: var(--primary-color);
+        }
+
+    }
 
 
 }
 
-.mit-shape-bottom{
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    margin-top: -75px;
-    svg {
-        position: relative;
-        display: block;
-        width: calc(100% + 1.3px);
-        height: 79px;
-    }
-    .shape-fill {
-        fill: var(--primary-color);
-    }
-
-}
 
 
-.bg-content{
+
+.bg-content {
     .texto {
         color: white;
         font-size: 40px;
@@ -59,23 +107,31 @@
         position: relative;
         top: 50%;
         transform: translateY(-50%);
-      }
+    }
 }
 
 @media (max-width: 991.98px) {
-    .mit{
-     background-attachment:unset !important;
+    .mit {
+        background-attachment: unset !important;
     }
-    .mit-shape-bottom{
-        margin-top: -30px !important;
+
+    .mit-shape-bottom {
         svg {
             height: 30px !important;
         }
     }
-    .mit-shape{
-        svg{
+
+    .mit-shape {
+        svg {
             height: 30px !important;
         }
     }
-}
 
+    .cert {
+        min-height: 17em !important;
+    }
+
+    .cert_date {
+        margin-top: 1em !important;
+    }
+}

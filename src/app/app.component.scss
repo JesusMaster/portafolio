@@ -60,6 +60,9 @@
 
   
   .menubar{
+    .navbar{
+      background-color: var(--header-color);
+    }
     background: var(--header-color);
     .navbar-brand{
         padding-top: .8rem !important;

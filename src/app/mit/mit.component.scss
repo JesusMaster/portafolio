@@ -63,6 +63,9 @@
 }
 
 @media (max-width: 991.98px) {
+    .mit{
+     background-attachment:unset !important;
+    }
     .mit-shape-bottom{
         margin-top: -30px !important;
         svg {

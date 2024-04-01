@@ -1,10 +1,10 @@
 <div class="main" [ngClass]="{'pixelart': _cortina }" ></div>
 @if(info){
-<section class="menubar py-2" (konami)="pixelart()">
+<section class="menubar py-2" (konamicode)="pixelart()">
   <div class="container">
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#" aria-label="Read more about me" (click)="pixelart()">
+        <a class="navbar-brand" href="#" aria-label="Read more about me">
           <span class="icon icon-logo"></span>
         </a>
         <div class="ms-auto me-2 d-block d-lg-none">
@@ -28,11 +28,11 @@
                 info.menu.links.link_1 }}</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#skills"><i class="fa-solid fa-caret-right"></i> {{ info.menu.links.link_2
+              <a class="nav-link" href="#experience"><i class="fa-solid fa-caret-right"></i> {{ info.menu.links.link_2
                 }}</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#experience"><i class="fa-solid fa-caret-right"></i> {{ info.menu.links.link_3
+              <a class="nav-link" href="#skills"><i class="fa-solid fa-caret-right"></i> {{ info.menu.links.link_3
                 }}</a>
             </li>
             <li class="nav-item">
@@ -116,10 +116,9 @@
   </svg>
 </div>
 
-
 @defer (on viewport; prefetch on idle) {
-<section class="my_experience">
-  <div class="container">
+<section class="my_experience" id="experience">
+  <div class="container py-5">
     <app-experience></app-experience>
   </div>
 </section>
@@ -129,7 +128,7 @@
 }
 
 @if(info && info.skills){
-<div class="divider-habilidades" id="experience">
+<div class="divider-habilidades">
   <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
     <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
   </svg>

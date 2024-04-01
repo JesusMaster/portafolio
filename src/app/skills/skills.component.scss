@@ -1,6 +1,18 @@
 .skills{
     font-family: "Lato", sans-serif;
     color: var(--primary-color);
+    h3{
+        padding: 1em;
+        text-align: center;
+        font-size: 24px;
+        display: block;
+        span{
+            display: block;
+            font-size: 16px;
+            font-weight: 300;
+            margin-top: 0.5em;
+        }
+    }
 }
 
 .separator-skills{
@@ -31,7 +43,7 @@
 
 .titleIcon {
     font-family: "Lato", sans-serif;
-    color: var(--naming-color);
+    color: var(--header-medias);
     text-transform: uppercase;
 
     &:after {
@@ -178,6 +190,13 @@
     .col-2.bottom {
         &::after {
             margin-top: 65px !important;
+        }
+    }
+    .skills{
+        h3{
+            span{
+                display: inline !important;
+            }
         }
     }
 }

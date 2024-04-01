@@ -9,7 +9,7 @@
         <div class="ms-auto me-2 d-block d-lg-none">
           <label class="switch">
             <input type="checkbox" id="checkbox1" [(ngModel)]="!isLightTheme" (change)="changeColor()"
-            aria-label="switch">
+              aria-label="switch">
             <span class="slider round"></span>
           </label>
         </div>
@@ -23,13 +23,16 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-caret-right"></i>  {{ info.menu.links.link_1 }}</a>
+              <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-caret-right"></i> {{
+                info.menu.links.link_1 }}</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#skills"><i class="fa-solid fa-caret-right"></i> {{ info.menu.links.link_2 }}</a>
+              <a class="nav-link" href="#skills"><i class="fa-solid fa-caret-right"></i> {{ info.menu.links.link_2
+                }}</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#experience"><i class="fa-solid fa-caret-right"></i> {{ info.menu.links.link_3 }}</a>
+              <a class="nav-link" href="#experience"><i class="fa-solid fa-caret-right"></i> {{ info.menu.links.link_3
+                }}</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#mit"><i class="fa-solid fa-caret-right"></i> {{ info.menu.links.link_4 }}</a>
@@ -50,17 +53,21 @@
 
             <div class="selector-language" [ngClass]="{'close':OpenLanguaje=='close','open':OpenLanguaje=='open'}">
               <ul>
-                <li (click)="toggleLanguage('es')"><span class="flag espana me-2"></span> {{ info.menu.language.es }}</li>
+                <li (click)="toggleLanguage('es')"><span class="flag espana me-2"></span> {{ info.menu.language.es }}
+                </li>
                 <li (click)="toggleLanguage('en')"><span class="flag usa me-2"></span> {{ info.menu.language.en }}</li>
-                <li (click)="toggleLanguage('de')"><span class="flag germany me-2"></span> {{ info.menu.language.de }}</li>
-                <li (click)="toggleLanguage('it')"><span class="flag italy me-2"></span> {{ info.menu.language.it }}</li>
+                <li (click)="toggleLanguage('de')"><span class="flag germany me-2"></span> {{ info.menu.language.de }}
+                </li>
+                <li (click)="toggleLanguage('it')"><span class="flag italy me-2"></span> {{ info.menu.language.it }}
+                </li>
               </ul>
             </div>
           </div>
 
           <div class="d-none d-lg-block">
             <label class="switch">
-              <input type="checkbox" id="checkbox2" [(ngModel)]="!isLightTheme" (change)="changeColor()" aria-label="switch">
+              <input type="checkbox" id="checkbox2" [(ngModel)]="!isLightTheme" (change)="changeColor()"
+                aria-label="switch">
               <span class="slider round"></span>
             </label>
           </div>
@@ -109,24 +116,7 @@
 </div>
 
 
-  @if(info && info.skills){
-    <section class="about_me" id="skills">
-      <div class="container">
-          <app-skills [skills]="info.skills"></app-skills>
-      </div>
-    </section>
-    }
-  }@placeholder{
-    <span>.</span>
-  }
-
 @defer (on viewport; prefetch on idle) {
-<div class="divider-habilidades" id="experience">
-  <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-      <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
-  </svg>
-</div>
-
 <section class="my_experience">
   <div class="container">
     <app-experience></app-experience>
@@ -134,16 +124,35 @@
 </section>
 
 }@placeholder{
-  <span>.</span>
+<span>.</span>
 }
+
+@if(info && info.skills){
+<div class="divider-habilidades" id="experience">
+  <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+  </svg>
+</div>
+
+<section class="about_me" id="skills">
+  <div class="container">
+    <app-skills [skills]="info.skills"></app-skills>
+  </div>
+</section>
+}
+}@placeholder{
+<span>.</span>
+}
+
+
 @defer (on viewport; prefetch on idle) {
-<section class="mit_experience"  id="mit">
+<section class="mit_experience" id="mit">
   <div class="row-fluid">
     <app-mit></app-mit>
   </div>
 </section>
 }@placeholder{
-  <span>.</span>
+<span>.</span>
 }
 @defer (on viewport; prefetch on idle) {
 <section class="my_hobbie">
@@ -152,5 +161,5 @@
   </div>
 </section>
 }@placeholder{
-  <span>.</span>
+<span>.</span>
 }

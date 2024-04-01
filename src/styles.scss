@@ -15,8 +15,7 @@
     --skill-color-circles: #0A384A;
 
     --mit-bg:url("./assets/images/mit.webp");
-    --konami-bg:url("./assets/images/konami.webp");
-    --konami-ciudad-bg:url("./assets/images/ciudad.webp");
+    --font-family: "Lato", sans-serif;
 
   }
 
@@ -34,6 +33,27 @@
     --skill-color-icons: #3e3b4e;
     --skill-color-circles: #191919;
     --mit-bg:url("./assets/images/mit_dark.webp");
+    --font-family: "Lato", sans-serif;
+
+  }
+
+  [data-theme="konami"] {
+    --header-color: #562477;
+    --naming-color: #eede5c;;;
+    --text-primary: #fff;
+    --text-secondary: #FFF2EF;
+    --header-medias: #92c0ed;
+    --slider-backgorund: #c8d7ec;
+    --primary-color: #FFF2EF;
+    --text-selector: #333333;
+    --skill-color: #006699;
+    --skill-color-icons: #1A4979;
+    --skill-color-circles: #0A384A;
+
+    --mit-bg:url("./assets/images/mit_pixelart.webp");
+    --konami-bg:url("./assets/images/konami.webp");
+    --konami-ciudad-bg:url("./assets/images/ciudad.webp");
+    --font-family: "Pixelify Sans", sans-serif;
 
   }
 }
@@ -65,7 +85,7 @@
 
 body {
   background: var(--header-color);
-  font-family: "Lato", sans-serif;
+  font-family: var(--font-family);
   // height: 100vh;
   // overflow: hidden;
   //   overflow-y: auto;

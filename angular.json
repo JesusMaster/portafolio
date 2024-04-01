@@ -37,6 +37,7 @@
               "src/assets/css/animate.min.css",
               "src/assets/css/all.min.css",
               "src/assets/css/lato_google.css",
+              "src/assets/css/pixelify_google.css",
               "src/styles.scss"
             ],
             "scripts": [

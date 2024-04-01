@@ -8,12 +8,13 @@ import { SkillsComponent } from './skills/skills.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { MitComponent } from './mit/mit.component';
 import { HobbieComponent } from './hobbie/hobbie.component';
+import { KonamiDirective } from './shared/directives/konami.directive';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,FormsModule,CommonModule,SkillsComponent,ExperienceComponent,MitComponent,HobbieComponent],
+  imports: [RouterOutlet,FormsModule,CommonModule,SkillsComponent,ExperienceComponent,MitComponent,HobbieComponent,KonamiDirective],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
@@ -28,6 +29,10 @@ export class AppComponent implements OnInit {
   public info:any;
   public messages: any = {};
   public counter=0;
+  public _pixelart:boolean = false;
+  public _cortina:boolean = false;
+
+  public _me = '../assets/images/me.webp'
 
   public OpenLanguaje='close';
 
@@ -98,6 +103,9 @@ export class AppComponent implements OnInit {
 
   changeColor(): void{
 
+    this._pixelart = false;
+    this._me = '../assets/images/me.webp';
+
     if(this.isLightTheme){
       this.isLightTheme=false
     }else{
@@ -110,6 +118,25 @@ export class AppComponent implements OnInit {
     );
 
   }
+
+
+  pixelart():void{
+    this._cortina = true;
+    
+    timer(1000).subscribe(_=>{
+      this.isLightTheme=true;
+      document.body.setAttribute('data-theme','konami');
+      this._me = '../assets/images/me_cartoon.webp';
+      this._pixelart = true;
+
+      timer(500).subscribe(()=>{
+        this._cortina = false;
+      })
+
+    });
+   
+  }
+
 
   async toggleLanguage(_lan: any):Promise<void> { 
 

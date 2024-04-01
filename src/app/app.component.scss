@@ -1,3 +1,22 @@
+.main{
+  width: 0;
+  display: block;
+  position: fixed;
+  background: var(--header-color);
+  transition: all ease-in-out 500ms;
+  left: 0;
+  height: 100%;
+  z-index: 1031;
+  &.pixelart {
+    height: 100vw;
+    position: fixed;
+    width: 100%;
+    z-index: 1031;
+    display: block;
+    background: var(--header-color);
+  }
+}
+
   .imgMe::after{
     content: "";
     width: 19.4em;
@@ -22,10 +41,18 @@
   .header{
     background: var(--header-color);
     min-height: 479px;
+    &.pixelart{
+      background: var(--konami-bg) !important;
+      background-size: cover;
+      background-position: left center;
+      .container > div.row > div + div > .row {
+        background: #0000009c;
+      }
+    }
   }
+
   
   .saludo{
-    font-family: "Lato", sans-serif;
     font-size: 32px;
     color:var(--text-primary);
     font-weight:500;
@@ -37,13 +64,11 @@
   }
   
   .slogan{
-    font-family: "Lato", sans-serif;
     color:var(--text-primary);
     font-weight:300;
     font-size:24px;
   }
   .career{
-    font-family: "Lato", sans-serif;
     font-size:14px;
     font-weight:400;
     color: var(--text-secondary);
@@ -52,6 +77,15 @@
   .about_me{
     min-height:35em;
     background: var(--header-color);
+    &.pixelart{
+      background: var(--konami-ciudad-bg) !important;
+      background-size: cover !important;
+      background-position: top center !important;
+
+      .container{
+        background: #335a7de3;
+      }
+    }
   }
   
   .my_hobbie{
@@ -106,7 +140,6 @@
       padding: 0.4em .7em;
       background-color: var(--slider-backgorund);
       border-radius: 1.3em;
-      font-family: "Lato", sans-serif;
       font-weight: 400;
       font-size: 14px;
       color: var(--header-color);
@@ -315,6 +348,7 @@
     line-height: 0;
     transform: rotate(180deg);
     height: 100px;
+    filter: drop-shadow(0px -5px 3px rgba(89, 89, 89, 0.23));
     svg {
         width: calc(112% + 1.3px);
         height: 100px;

@@ -51,7 +51,7 @@
   
   .about_me{
     min-height:35em;
-    background: var(--primary-color);
+    background: var(--header-color);
   }
   
   .my_hobbie{
@@ -414,4 +414,8 @@
         left: 15px;
       }
     }
+  }
+
+  .my_experience {
+    background-color: var(--primary-color);
   }

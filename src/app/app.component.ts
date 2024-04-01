@@ -37,7 +37,7 @@ export class AppComponent implements OnInit {
 
    async ngOnInit():Promise<void>{
 
-    this.translate = await this.getTranslation(this.lang);
+    this.translate = this.getTranslation(this.lang);
 
     this.translate.subscribe((_data:any)=>{
       this.info = _data;

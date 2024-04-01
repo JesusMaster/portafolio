@@ -1,3 +1,53 @@
 .experiences{
     min-height: 40em;
 }
+
+
+.card{
+    border-radius: 1em;
+    overflow: hidden;
+    border: unset !important;
+    &:hover{
+       
+        .header-card{
+            transform: rotate(20deg) scale(1.5);
+            filter: saturate(.9) grayscale(0);
+        }
+
+
+    }
+    .header-card{
+        height: 10em;
+        background-size: cover !important;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
+        transition: all 500ms;
+        filter: saturate(.75) grayscale(.1);
+    }
+    
+    .divider-card{
+        margin-top: -60px;
+        z-index:1;
+        filter: drop-shadow(2px 0px 6px rgba(47, 47, 47, 0.36));
+        path{
+            fill: var(--text-primary)
+        }
+    }
+    .body-card{
+        height: 5em;
+        z-index: 1;
+        // border-top-left-radius: 2em;
+        border-radius: 0 0 1em 1em;
+        background-color: var(--text-primary);
+        margin-top: -2px;
+        .img-empresa{
+            border-radius: 50%;
+            overflow: auto;
+            aspect-ratio: 1/1;
+            width: 3em;
+            border: 2px solid #E8E8E8;
+            box-shadow: 1px 1px 5px #eaeaea;
+        }
+    }
+}
+

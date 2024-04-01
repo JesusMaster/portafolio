@@ -42,6 +42,8 @@
                 padding: 0.7em 0em;
                 max-height: 80px;
                 min-height: 71px;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
 
             .cert_date {

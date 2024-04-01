@@ -1,5 +1,4 @@
 .skills{
-    font-family: "Lato", sans-serif;
     color: var(--primary-color);
     h3{
         padding: 1em;
@@ -17,7 +16,7 @@
 
 .separator-skills{
     width: 100%;
-    background-color: var(--header-color);
+    // background-color: var(--header-color);
     height: 2em;
 }
 
@@ -42,7 +41,6 @@
 }
 
 .titleIcon {
-    font-family: "Lato", sans-serif;
     color: var(--header-medias);
     text-transform: uppercase;
 

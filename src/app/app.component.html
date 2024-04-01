@@ -1,9 +1,10 @@
+<div class="main" [ngClass]="{'pixelart': _cortina }" ></div>
 @if(info){
-<section class="menubar py-2">
+<section class="menubar py-2" (konami)="pixelart()">
   <div class="container">
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#" aria-label="Read more about me">
+        <a class="navbar-brand" href="#" aria-label="Read more about me" (click)="pixelart()">
           <span class="icon icon-logo"></span>
         </a>
         <div class="ms-auto me-2 d-block d-lg-none">
@@ -77,11 +78,11 @@
   </div>
 </section>
 
-<section class="header p-4 mt-5 pt-5">
+<section class="header p-4 mt-5 pt-5" [ngClass]="{'pixelart': _pixelart }">
   <div class="container mb-5">
     <div class="row">
       <div class="col-12 col-lg-4 offset-lg-1 d-flex justify-content-center imgMe">
-        <img fetchpriority="high" src="../assets/images/me.webp" alt="me" class="img-fluid me">
+        <img fetchpriority="high" src="{{_me}}" alt="me" class="img-fluid me">
       </div>
       <div class="col-12 col-lg-7 d-flex align-items-center">
         <div class="row">
@@ -134,7 +135,7 @@
   </svg>
 </div>
 
-<section class="about_me" id="skills">
+<section class="about_me" id="skills" [ngClass]="{'pixelart': _pixelart }">
   <div class="container">
     <app-skills [skills]="info.skills"></app-skills>
   </div>

@@ -2,8 +2,8 @@
     "menu": {
         "links": {
             "link_1": "Home",
-            "link_2": "Competenze",
-            "link_3": "Esperienze",
+            "link_2": "Esperienze",
+            "link_3": "Competenze",
             "link_4": "MIT",
             "link_5": "Hobby"
         },

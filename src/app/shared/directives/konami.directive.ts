@@ -14,12 +14,12 @@ export class KonamiDirective {
   constructor() {
     this.konami = new EventEmitter<void>();
     this.sequence = [];
-    this.konamiCode = ['38', '38', '40', '40', '37', '39', '37', '39', '66', '65'];
+    this.konamiCode = ['arrowup', 'arrowup', 'arrowdown', 'arrowdown', 'arrowleft', 'arrowright', 'arrowleft', 'arrowright', 'b', 'a'];
   }
   @HostListener('window:keydown', ['$event'])
   handleKeyboardEvent(event: KeyboardEvent) {
-    if (event.keyCode) {
-      this.sequence.push(event.keyCode.toString());
+    if (event.key) {
+      this.sequence.push(event.key.toLowerCase());
       if (this.sequence.length > this.konamiCode.length) {
         this.sequence.shift();
       }

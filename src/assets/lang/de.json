@@ -2,8 +2,8 @@
     "menu": {
         "links": {
             "link_1": "Startseite",
-            "link_2": "Fähigkeiten",
-            "link_3": "Erfahrungen",
+            "link_2": "Erfahrungen",
+            "link_3": "Fähigkeiten",
             "link_4": "MIT",
             "link_5": "Hobbys"
         },

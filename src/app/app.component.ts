@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, OnInit, inject } from '@angular/core';
+import { ActivatedRoute, Router, RouterOutlet } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import {timer} from 'rxjs'
@@ -8,13 +8,13 @@ import { SkillsComponent } from './skills/skills.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { MitComponent } from './mit/mit.component';
 import { HobbieComponent } from './hobbie/hobbie.component';
-import { KonamiDirective } from './shared/directives/konami.directive';
+import { KonamiCodeModule } from 'ngx-konami-code';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,FormsModule,CommonModule,SkillsComponent,ExperienceComponent,MitComponent,HobbieComponent,KonamiDirective],
+  imports: [RouterOutlet,FormsModule,CommonModule,SkillsComponent,ExperienceComponent,MitComponent,HobbieComponent,KonamiCodeModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
@@ -31,6 +31,9 @@ export class AppComponent implements OnInit {
   public counter=0;
   public _pixelart:boolean = false;
   public _cortina:boolean = false;
+
+  private readonly route = inject(ActivatedRoute);
+  #router = inject(Router);
 
   public _me = '../assets/images/me.webp'
 
@@ -120,14 +123,21 @@ export class AppComponent implements OnInit {
   }
 
 
-  pixelart():void{
+  pixelart(){
     this._cortina = true;
-    
     timer(1000).subscribe(_=>{
+      window.scrollTo(0, 0);
+      
       this.isLightTheme=true;
+      if(!this._pixelart){
       document.body.setAttribute('data-theme','konami');
       this._me = '../assets/images/me_cartoon.webp';
       this._pixelart = true;
+      }else{
+        document.body.setAttribute('data-theme','light');
+        this._me = '../assets/images/me.webp';
+        this._pixelart = false;
+      }
 
       timer(500).subscribe(()=>{
         this._cortina = false;

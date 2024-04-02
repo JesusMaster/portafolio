@@ -16,6 +16,30 @@
 
 
 .card{
+
+   .links{
+    font-size: 13px ;
+    i:before{
+        color: var(--header-color);
+    }
+    .repo,.url{
+        display: flex;
+        align-items: center;
+        gap:6px;
+        margin-bottom: 0.5em;
+    }
+    .repo{
+        i:before{
+            font-size: 1.6em;
+        }
+    }
+    .url{
+        i:before{
+            font-size: 1.6em;
+        }
+    }
+   }
+
     border-radius: 1em;
     overflow: hidden;
     border: unset !important;
